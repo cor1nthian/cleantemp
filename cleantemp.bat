@@ -29,7 +29,7 @@ IF EXIST "C:\Users\" (
     for /D %%x in ("C:\Users\*") do ( 
         rmdir /s /q "%%x\AppData\Local\Microsoft\Windows\Temporary Internet Files" 
         mkdir "%%x\AppData\Local\Microsoft\Windows\Temporary Internet Files" 
-		rmdir /s /q "%%x\AppData\Roaming\VSCodium\User\History" 
-		mkdir "%%x\AppData\Roaming\VSCodium\User\History"
+	rmdir /s /q "%%x\AppData\Roaming\VSCodium\User\History" 
+	mkdir "%%x\AppData\Roaming\VSCodium\User\History"
     )
 )
